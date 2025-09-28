@@ -35,6 +35,6 @@ RUN curl -fLo swift.tar.gz "https://download.swift.org/swift-6.1-release/ubuntu2
 RUN tar -xf swift.tar.gz --strip-components=2 -C /usr
 
 COPY ./ ./
-RUN swift build -c debug
+RUN swift build -c release
 
-CMD swift run -c debug
+CMD swift run -c release

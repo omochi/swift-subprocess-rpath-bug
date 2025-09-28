@@ -34,7 +34,7 @@ When I checked with `otool`, I found that when Xcode builds, `/usr/lib/swift` is
 
 # On Linux...
 
-On Ubuntu 22.04 with Swift 6.1, there is a bug where subprocess calls hang and never return in release builds.
+On Ubuntu 22.04 with Swift 6.1, there is an another bug where subprocess calls hang and never return in release builds.
 You can verify this with the following steps.
 
 ```sh

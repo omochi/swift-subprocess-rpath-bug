@@ -31,3 +31,13 @@ zsh: abort      swift run
 It seems that `libswiftCompatibilitySpan.dylib` cannot be found.
 Curiously, it does run when executed from Xcode.
 When I checked with `otool`, I found that when Xcode builds, `/usr/lib/swift` is set as an RPath, but when built with SwiftPM, that RPath is missing.
+
+# On Linux...
+
+On Ubuntu 22.04 with Swift 6.1, there is a bug where subprocess calls hang and never return in release builds.
+You can verify this with the following steps.
+
+```sh
+$ docker build . -t temp
+$ docker run temp
+```

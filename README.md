@@ -10,7 +10,7 @@ ProductName:		macOS
 ProductVersion:		26.0
 BuildVersion:		25A354
 [omochi@omochi-mbp swift-subprocess-rpath-bug (main =)]$ xcode-select -p
-/Applications/Xcode26-beta.1.app/Contents/Developer
+/Applications/Xcode26.1-beta.1.app/Contents/Developer
 [omochi@omochi-mbp swift-subprocess-rpath-bug (main =)]$ swift --version
 swift-driver version: 1.127.14.1 Apple Swift version 6.2.1 (swiftlang-6.2.1.1.1 clang-1700.4.1.1)
 Target: arm64-apple-macosx26.0
